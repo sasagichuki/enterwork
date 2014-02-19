@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'ColfaxBold';
+  src:url('../fonts/ColfaxWebBold.eot');
+  src:url('../fonts/ColfaxWebBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ColfaxWebBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ColfaxRegular';
+  src:url('../fonts/ColfaxWebRegular.eot');
+  src:url('../fonts/ColfaxWebRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ColfaxWebRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-bold:  'ColfaxBold', Helvetica, sans-serif;
+$font:  'ColfaxRegular', Helvetica, sans-serif;
+/* Colours */ 
+/* ==================================================== */
+$white:#fff;
+$grey:#515151;
+$black:#000;
+$gutter:30px;
+h1, h2, h3, h4, h5, h6{
+  font-family:$font-bold;
+  font-weight:normal;
+}
+
+/* Mixins*/ 
+/* ==================================================== */
+@mixin box-sizing{
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  -o-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin animaxn{
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+
+
+

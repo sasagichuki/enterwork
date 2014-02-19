@@ -1,0 +1,11 @@
+SHORT CODES
+Circle-Four:~ njengaleison$ cd /applications/xampp/xamppfiles/htdocs/family-bank/wp-content/themes/familybank/css
+
+Circle-Four:css njengaleison$ sass --watch  main.scss:main.css --style expanded --line-numbers
+
+
+
+Circle-Four:imbank-iframe njengaleison$ cd /Applications/XAMPP/htdocs/template/
+Circle-Four:template njengaleison$ 
+
+Circle-Four:template njengaleison$ bash watch.sh 

@@ -1,0 +1,262 @@
+/* Laptop/Smaller Desktop Layout: 1366px plus */
+@media only screen and (min-width: 1366px) {
+	
+}
+
+
+/* Tablet Layout: 628px to 991px */
+@media only screen and (min-width: 961px) and (max-width: 1023px) {
+	 
+	.wrap{
+		padding:0 20px;
+	}
+	.column{
+		width: 40%; /* 960 */
+		width: -webkit-calc( (100% - 160px)/3 ); /* 240 */
+		width: -moz-calc( (100% - 160px) /3); /* 240 */
+		width: calc( (100% - 160px) /3); /* 240 */
+		float: left;
+		text-align:center;
+		margin:0 20px;
+	}
+
+
+}
+
+/* Ipad */
+@media (min-width: 768px) and (max-width: 960px) {
+	
+	.wrap{
+		padding:0 20px;
+	}
+	.column{
+		width: 40%; /* 960 */
+		width: -webkit-calc( (100% - 160px)/3 ); /* 240 */
+		width: -moz-calc( (100% - 160px) /3); /* 240 */
+		width: calc( (100% - 160px) /3); /* 240 */
+		float: left;
+		text-align:center;
+		margin:0 20px;
+	}
+
+	.result-wrap .column{
+		padding: 0 20px;
+	}
+	.bx-wrapper .bx-prev {
+		left: 10px;
+	}
+	.bx-wrapper .bx-next {
+		right: 10px;
+	}
+
+}
+
+
+/*Nexus and samsung tab*/
+@media (min-width: 500px) and (max-width: 767px) {
+	 .main-section{
+		.intro p{
+			width:100%;
+		}
+	}
+	.wrap{
+		padding:0 20px;
+	}
+	.intro-column {
+		margin-bottom: 0;
+	}
+	.column{
+		width: 100%; /* 960 */
+		width: -webkit-calc(100%);  
+		width: -moz-calc(100%);  
+		width: calc(100%);  
+		float: left;
+		text-align:center;
+		margin:0 0 30px;
+	}
+
+	.result-wrap .column{
+		padding: 0;
+		width: 100%; /* 960 */
+		width: -webkit-calc(100%);  
+		width: -moz-calc(100%);  
+		width: calc(100%);  
+		float: left;
+		text-align:center;
+		margin:0 0 30px;
+	}
+	.bx-wrapper .bx-prev {
+		left: 10px;
+	}
+	.bx-wrapper .bx-next {
+		right: 10px;
+	}
+	.bx-wrapper .bx-pager{
+		bottom: 108px;
+	}
+	.caption {
+		padding: 44px 0 0px;
+		width: 100%;
+		p{
+			padding:0 20px;
+		}
+	}
+
+	.slider-section{
+		.wrap{
+			padding:0;
+		}
+	}
+
+
+}
+
+@media (min-width: 100px) and (max-width: 499px) {
+   	 .main-section{
+		.intro{
+			h1{
+				font-size: 24px;
+				line-height: 32px;
+			}
+			p{
+				width:100%;
+				line-height: 24px;
+				font-size: 16px;
+			}
+		}
+	}
+	.wrap{
+		padding:0 20px;
+	}
+	.intro-column {
+		margin-bottom: 0;
+	}
+	.column{
+		width: 100%; /* 960 */
+		width: -webkit-calc(100%);  
+		width: -moz-calc(100%);  
+		width: calc(100%);  
+		float: left;
+		text-align:center;
+		margin:0 0 30px;
+		h3{
+			font-size: 26px;
+			line-height: 32px;
+		}
+	}
+
+	.result-wrap .column{
+		padding: 0;
+		width: 100%; /* 960 */
+		width: -webkit-calc(100%);  
+		width: -moz-calc(100%);  
+		width: calc(100%);  
+		float: left;
+		text-align:center;
+		margin:0 0 30px;
+	}
+	.bx-controls-direction{
+		display:none;
+	}
+	.bx-wrapper .bx-pager{
+		bottom: 140px;
+	}
+	.caption {
+		padding: 44px 0 0px;
+		width: 100%;
+		p{
+			padding:0 20px;
+		}
+	}
+	.result-block .heading-title{
+		margin: 25px 0 20px;
+	}
+	.slider-section{
+		.wrap{
+			padding:0;
+		}
+	}
+	.thank-you {
+		text-align: center;
+		font-size: 39px;
+		line-height: 50px;
+		border-top: grey solid 1px;
+		border-bottom: grey solid 1px;
+		margin: 40px auto;
+		max-width: 100%;
+		padding: 10px 0;
+	}
+
+
+}
+/*Mobile ends*/
+
+
+/* Print Styles */
+/* ==================================================== */
+ 
+@media print {
+
+	* {
+		background: transparent !important; 
+		color: black !important; 
+		text-shadow: none !important; 
+		filter:none !important; 
+		-ms-filter: none !important; 
+	} 
+	
+	a, 
+	a:visited { 
+		text-decoration: underline; 
+	}
+	
+	a[href]:after { 
+		content: " (" attr(href) ")"; 
+	}
+	
+	abbr[title]:after { 
+		content: " (" attr(title) ")"; 
+	}
+	
+	.ir a:after, 
+	a[href^="javascript:"]:after, 
+	a[href^="#"]:after { 
+		content: ""; 
+	} 
+	
+	pre, 
+	blockquote { 
+		border: 1px solid #999; 
+		page-break-inside: avoid; 
+	}
+	
+	thead { 
+		display: table-header-group; 
+	}
+	
+	tr, 
+	img { 
+		page-break-inside: avoid; 
+	}
+	
+	img { 
+		max-width: 100% !important; 
+	}
+	
+	@page { 
+		margin: 0.5cm; 
+	}
+	
+	p, 
+	h2, 
+	h3 { 
+		orphans: 3; 
+		widows: 3; 
+	}
+	
+	h2, 
+	h3 { 
+		page-break-after: avoid; 
+	}
+	
+}
